@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BTVN Buổi 28</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    </head>
+    <body>
+        <button
+            type="button"
+            class="header-account"
+            aria-label="Đăng nhập"
+            name="login"
+        >
+            <span class="log">Đăng nhập</span class="log">
+        </button>
+        <div class="auth-overlay" style="display: none;"></div>
+        <div class="wrapper" style="display: none;">
+            <div class="title-text">
+               <div class="title login">
+                <a href="/"><img class="dt-w-auto dt-h-7" src="https://cdnweb.dantri.com.vn/dist/c7b827391b2f30b6fbaf.png" ></a>
+               </div>
+               <div class="title signup">
+                  Signup Form
+               </div>
+            </div>
+            <div class="form-container">
+               <div class="slide-controls">
+                  <input type="radio" name="slide" id="login" checked>
+                  <input type="radio" name="slide" id="signup">
+                  <label for="login" class="slide login">Đăng nhập</label>
+                  <label for="signup" class="slide signup">Đăng ký</label>
+                  <div class="slider-tab"></div>
+                </div>
+              <div class="wrappersocial">
+                   <div class="text"> <span >với các tài khoản mạng xã hội</span></div>
+                   <div class="dt-grid dt-grid-cols-2 dt-items-center dt-gap-2">
+                     <button class="dt-h-11 dt-flex dt-items-center dt-justify-center dt-gap-1.5 dt-bg-ce2e8f0 dt-rounded" type="button">
+                         <img class="dt-relative dt-top-px dt-w-auto dt-h-[34px]" width="35" height="35" src="https://cdnweb.dantri.com.vn/dist/602a5aca41bdeb805571.svg" alt="Google">
+                         Google
+                     </button>
+                     <button class="dt-h-11 dt-flex dt-items-center dt-justify-center dt-gap-1.5 dt-bg-ce2e8f0 dt-rounded" type="button">
+                         <img class="dt-w-auto dt-h-7" width="35" height="35" src="https://cdnweb.dantri.com.vn/dist/05804407650f4479d9ef.svg" alt="Facebook">
+                         Facebook
+                     </button>
+                    </div>
+                    <div class="or"><span>hoặc</span></div>
+              </div>
+                 <div class="account">Account not existed.</div>
+                 <div class="form-inner">
+                  <form action="#" class="login" style="display: block;">
+                     <div class="field">
+                        <div  class="labep"><span>Email</span></div>
+                        <input class="emailandpass" type="text" placeholder="Email " required>
+                        <div class="warning" >Vui lòng nhập thông tin</div>
+                     </div>
+                    
+                     <div class="field">
+                        <div class="labep" ><span>Mật Khẩu</span></div>
+                     <div class="all">
+                            <input class="emailandpass" type="text" placeholder="Mật khẩu" required>
+                            <div><i class="fa-regular fa-eye"></i></div>
+                           <div> <i class="fa-regular fa-eye-slash" style="display: none;"></i></div>
+                     </div>
+                        <div class="warning" >Vui lòng nhập thông tin</div>
+                     </div>
+                     <div class="pass-link">
+                        <a href="#">Quên mật khẩu</a>
+                     </div>
+                     <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input class="submit" type="submit" value="Đăng nhập">
+                     </div>
+                    
+                  </form>
+                  <form action="#" class="signup" style="display: none;">
+                     <p style="padding-top: 20px;">Hoàn thành đăng ký, và bắt đầu trải nghiệm ngay!</p>
+                     <div class="field">
+                        <div  class="labep"><span>Họ và tên</span></div>
+                        <input class="emailandpass" type="text" placeholder="Họ và tên" required>
+                        <div class="warning" >Vui lòng nhập thông tin</div>
+                     </div>
+                     <div class="field">
+                        <div  class="labep"><span>Email</span></div>
+                        <input class="emailandpass" type="text" placeholder="Email" required>
+                        <div class="warning" >Vui lòng nhập thông tin</div>
+                     </div>
+                     <div class="field">
+                        <div class="labep" ><span>Mật Khẩu</span></div>
+                     <div class="all">
+                            <input class="emailandpass" type="text" placeholder="Mật khẩu" required>
+                            <div><i class="fa-regular fa-eye"></i></div>
+                           <div> <i class="fa-regular fa-eye-slash" style="display: none;"></i></div>
+                     </div>
+                        <div class="warning" >Vui lòng nhập thông tin</div>
+                     </div>
+                     <div class="auth-control term">Bằng cách đăng ký tài khoản, bạn cũng đồng thời chấp nhận mọi <a href="#" class="dt-text-c1a7900">điều kiện về qui định và chính sách của Dân trí</a></div>
+                     <div class="field btn">
+                        <div class="btn-layer"></div>
+                        <input class="submit" type="submit" value="Đăng ký">
+                     </div>
+                  </form>
+                 
+               </div>
+            </div>
+         </div>
+   <script src="index.js"></script>
+    </body>
+</html>
+
+
