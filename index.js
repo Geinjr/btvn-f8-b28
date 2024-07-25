@@ -47,14 +47,18 @@ var accountEl = document.querySelector(".account");
 var fields = document.querySelectorAll(".field");
 fields.forEach(function (field) {
     var inputEl = field.querySelector("input");
-    var warningEl = field.querySelector(".warning");
 
     inputEl.addEventListener("input", function () {
-        if (inputEl.value.trim() === "") {
-            warningEl.style.display = "block";
-        } else {
-            warningEl.style.display = "none";
-        }
+        fields.forEach(function (otherField) {
+            var otherInputEl = otherField.querySelector("input");
+            var warningEl = otherField.querySelector(".warning");
+
+            if (otherInputEl.value.trim() === "") {
+                warningEl.style.display = "block";
+            } else {
+                warningEl.style.display = "none";
+            }
+        });
     });
 });
 
